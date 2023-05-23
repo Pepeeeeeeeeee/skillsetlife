@@ -189,7 +189,6 @@ function showSlides(n) {
 <style scoped>
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .testimonials-container{
   background-color: #2395E7;
   padding: 2em;

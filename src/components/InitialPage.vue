@@ -1,14 +1,19 @@
 <template>
     <header>
-        <div class="container">
-            <!-- <div class = "logo"><img src="../assets/ColorLogoWithBG.svg"></div> -->
-            <div class = "comp"><a>AKO TO FUNGUJE?</a></div>
-            <div class = "comp"><a>FAQ</a></div>
-            <div class = "comp"><a>KONTAKT</a></div>
-            <div class = "comp">|</div>
-            <div class = "comp"><img src="../assets/instagram.png"></div>
-            <div class = "comp"><img src="../assets/facebook.png"></div>
-        </div>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="../assets/logo/Colorlogo-nobackground.svg" alt="" class="logo">
+                <div class = "comp divider">|</div>
+                <div class = "comp"><a>AKO TO FUNGUJE?</a></div>
+            </div>
+            <div class="nav-right">
+                <div class = "comp"><a>FAQ</a></div>
+                <div class = "comp"><a>KONTAKT</a></div>
+                <div class = "comp divider">|</div>
+                <div class = "comp social"><img src="../assets/instagram.svg"></div>
+                <div class = "comp social"><img src="../assets/facebook.svg"></div>
+            </div>
+        </nav>
         <title>skillset.life</title>
     </header>
     <div class = "bg">
@@ -46,16 +51,28 @@ export default ({
 </script>
 
 <style>
-
-    
-    .container{
+    .navbar{
         display: flex;
-        flex-direction: row;    
-        float: right;
+        height: 56px;
+        justify-content: space-between;
+        z-index: 1;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+    }
+
+    .nav-left, .nav-right {
+        display: flex;
     }
     
-    .comp{
-        padding-left: 20px;
+    .comp {
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .divider {
+        font-size: xx-large;
     }
 
     .cont{
@@ -70,7 +87,6 @@ export default ({
     }
  
     .logo{
-        width: 16px;
-        height: 16px;
+        height: 56px;
     }
 </style>
