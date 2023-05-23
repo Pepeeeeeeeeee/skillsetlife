@@ -14,7 +14,7 @@
       <img src="../assets/arrow-long-right.svg" alt=""> -->
       <div class="step">
         <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
-        <h3>Zaplat</h3>
+        <h3>Vyber si</h3>
       </div>
       <img src="../assets/arrow-long-right.svg" alt="">
       <div class="step">
@@ -29,7 +29,7 @@
     <div class="org-process">
       <div class="step">
         <div class="step-img"><img src="../assets/notes.svg" alt=""></div>
-        <h3>Vypln <a href="">formular</a></h3>
+        <h3>Vypln formular</h3>
       </div>
       <img src="../assets/arrow-long-right.svg" alt="">
       <div class="step">

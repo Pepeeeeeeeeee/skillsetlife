@@ -1,5 +1,5 @@
 <template>
-    <div class = "container">
+    <div class = "subscriptions-container">
         <div class = "card">
             <h4 class = "h4">Mesacny</h4>
             <h2>12.99$</h2>
@@ -30,7 +30,7 @@ export default ({
 })
 </script>
 <style>
-    .container{
+    .subscriptions-container{
 	display: flex;
 	flex-direction: row;
     }

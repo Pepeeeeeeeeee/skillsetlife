@@ -4,7 +4,7 @@
         <title>skillset.life</title>
             <header>
                 <div class="container">
-                    <!-- <div class = "logo"><img src="../assets/ColorLogoWithBG.svg"></div> -->
+                    <div class = "logo"><img src="../assets/ColorLogoWithBG.svg"></div>
                     <div class = "comp"><a>AKO TO FUNGUJE?</a></div>
                     <div class = "comp"><a>FAQ</a></div>
                     <div class = "comp"><a>KONTAKT</a></div>
