@@ -1,21 +1,19 @@
 <template>
-    <div class = "bg">
-        <head>
+    <header>
+        <div class="container">
+            <!-- <div class = "logo"><img src="../assets/ColorLogoWithBG.svg"></div> -->
+            <div class = "comp"><a>AKO TO FUNGUJE?</a></div>
+            <div class = "comp"><a>FAQ</a></div>
+            <div class = "comp"><a>KONTAKT</a></div>
+            <div class = "comp">|</div>
+            <div class = "comp"><img src="../assets/instagram.png"></div>
+            <div class = "comp"><img src="../assets/facebook.png"></div>
+        </div>
         <title>skillset.life</title>
-            <header>
-                <div class="container">
-                    <div class = "logo"><img src="../assets/ColorLogoWithBG.svg"></div>
-                    <div class = "comp"><a>AKO TO FUNGUJE?</a></div>
-                    <div class = "comp"><a>FAQ</a></div>
-                    <div class = "comp"><a>KONTAKT</a></div>
-                    <div class = "comp">|</div>
-                    <div class = "comp"><img src="../assets/instagram.png"></div>
-                    <div class = "comp"><img src="../assets/facebook.png"></div>
-                </div>
-            </header>
-        </head>
+    </header>
+    <div class = "bg">
 
-        <body> 
+
             <div class = "cont">
                 <h1>“Dosiahni svoje ciele s naším skvelým vzdelávacím nástrojom”</h1>
                 <button @click ="move()">Zacnite hned</button>
@@ -28,7 +26,6 @@
                     <th><h4>+421956 809 876</h4></th>   
                 </tr>
             </table> -->
-        </body>
     </div>
 </template>
 
@@ -49,6 +46,8 @@ export default ({
 </script>
 
 <style>
+
+    
     .container{
         display: flex;
         flex-direction: row;    
@@ -63,15 +62,15 @@ export default ({
         padding-top: 100px;
     }
 
-    /* .bg{
+    .bg{
 	background-image: url(../assets/background.svg) !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-    } */
-/* 
+    }
+ 
     .logo{
-        width: 10%;
-        height: 8%;
-    } */
+        width: 16px;
+        height: 16px;
+    }
 </style>
