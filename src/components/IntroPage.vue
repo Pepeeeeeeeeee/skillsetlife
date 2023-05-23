@@ -4,22 +4,32 @@
             <h3 class = "text" @click="help()">Pomoze s dosahovanim uspechu, ochrani pred <br> dezinformaciami a manipulaciami, pomoze so <br> zarobenim penazi</h3>
         </div>
         <div class = "compo">
-            <img src="../assets/mortarboard.png" alt="" class = "icon">
-            <p>
-                Kurzy <br><br>
-                Podcasty <br><br>
-                Shorty <br><br>
-                Pitch nights <br><br>
-                Cvicenia
-            </p>
+            <div class="icon-bg">
+                <img src="../assets/list.svg" alt="" class = "icon">
+            </div>
+            <div class="">
+                <p>Ucebne Formaty</p>
+                <ul>
+                    <li>Kurzy</li>
+                    <li>Podcasty</li>
+                    <li>Shorty</li>
+                    <li>Pitch nights</li>
+                    <li>Cvicenia</li>
+                </ul>
+            </div>
         </div>
         <div class = "compo">
-            <img src="../assets/event.png" alt="" class = "icon">
-            <p>
-                Diskusie <br><br>
-                Livestreamy <br><br>
-                Eventy
-            </p>
+            <div class="icon-bg">
+                <img src="../assets/calendar.svg" alt="" class = "icon">
+            </div>
+            <div class="">
+                <p>Komunitne podujatias</p>
+                <ul>
+                    <li>Diskusie</li>
+                    <li>Livestreamy</li>
+                    <li>Eventy</li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -42,10 +52,11 @@ export default ({
         background-color: #2395E7;
         padding: 2em;
         color: white;
-        padding-bottom: 2em;
         margin-bottom: 2em;
         display: flex;
         flex-direction: row;
+        justify-content:center;
+        gap: 12em;
     }
 
     .text{
@@ -53,16 +64,32 @@ export default ({
         font-size: x-large;
         line-height: 2em;
     }
- 
-    .compo{
-        
-        margin-left: 100px;
 
+    .compo {
+        display: flex;
+        gap: 1em;
+    }
+    
+
+    .icon-bg {
+        height: 48px;
+        width: 48px;
+        padding: 16px;
+        border-radius: 100%;
+        background-color: #44a5eb;
     }
 
     .icon{
-        size: 64px;
-        border: solid;
-        border-radius: 100%;
+        width: 48px;
     }
+
+    li {
+        font-size: large;
+    }
+
+    p {
+        font-size: larger;
+        font-weight: bold;
+    }
+
 </style>
