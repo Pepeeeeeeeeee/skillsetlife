@@ -2,6 +2,7 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Start />
+  <Intro />
   <Testimonials />
   <Process />
 
@@ -12,6 +13,7 @@
 import Testimonials from './components/TestimonialsPage.vue';
 import Process from './components/ProcessPage.vue';
 import Start from './components/InitialPage.vue';
+import Intro from './components/IntroPage.vue';
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     //HelloWorld
     Testimonials,
     Process,
-    Start
+    Start,
+    Intro
   }
 }
 </script>
