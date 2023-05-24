@@ -4,9 +4,10 @@
             <div class="nav-left">
                 <img src="../assets/logo/Colorlogo-nobackground.svg" alt="" class="logo">
                 <div class = "comp divider">|</div>
-                <div class = "comp"><a>AKO TO FUNGUJE?</a></div>
+                <div class = "comp"><a class="home-link">Your learning portal</a></div>
             </div>
             <div class="nav-right">
+                <div class = "comp"><a>PREDPLATNE</a></div>
                 <div class = "comp"><a>FAQ</a></div>
                 <div class = "comp"><a>KONTAKT</a></div>
                 <div class = "comp divider">|</div>
@@ -51,6 +52,11 @@ export default ({
 </script>
 
 <style>
+    .home-link {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+    }
+
     .navbar{
         display: flex;
         height: 56px;
