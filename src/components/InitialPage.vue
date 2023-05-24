@@ -21,7 +21,7 @@
 
 
             <div class = "cont">
-                <h1>“Dosiahni svoje ciele s naším skvelým vzdelávacím nástrojom”</h1>
+                <h1>“Dosiahni svoje ciele s naším skvelým vzdelávacím nástrojom ”</h1>
                 <button @click ="move()">Zacnite hned</button>
             </div>
 
