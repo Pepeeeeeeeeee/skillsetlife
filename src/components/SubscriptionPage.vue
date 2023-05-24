@@ -57,7 +57,7 @@ export default ({
     }
 })
 </script>
-<style>
+<style scoped>
     .subscriptions-container{
 	display: flex;
     gap: 5em;
@@ -74,7 +74,7 @@ export default ({
     
     .btn{
         width: 90%;
-        background-color: #2395E7;
+        background-color: #2395e7;
         border: none;
         color: white;
         padding: 4px;
