@@ -5,6 +5,7 @@
   <Intro />
   <Testimonials />
   <Process />
+  <Footer />
 
 </template>
 
@@ -14,6 +15,7 @@ import Testimonials from './components/TestimonialsPage.vue';
 import Process from './components/ProcessPage.vue';
 import Start from './components/InitialPage.vue';
 import Intro from './components/IntroPage.vue';
+import Footer from './components/FooterPage.vue';
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     Testimonials,
     Process,
     Start,
-    Intro
+    Intro,
+    Footer
   }
 }
 </script>
