@@ -1,6 +1,6 @@
 <template>
     <div class = "bgr">
-        <div>
+        <div class="col">
             <h3 class = "textNadpis" @click="help()">Pomoze s dosahovanim uspechu, ochrani pred <br> dezinformaciami a manipulaciami, pomoze so <br> zarobenim penazi</h3>
             <div>
                 <h4 class = "text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -8,43 +8,39 @@
                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
             </div>
-            <div><button>KUPIT</button></div>
+        <button>KUPIT</button>
         </div>
-        <div class = "compo">
-            <div class = "compo1">
-                <div class = "compo1_1">
-                    <div class="icon-bg">
-                        <img src="../assets/list.svg" alt="" class = "icon">
+        <div class="col">
+            <div class = "compo">
+                <div class="formats">
+                    <div class="icon-bg"><img src="../assets/list.svg" alt="" class = "icon"></div>
+                    <div class="">
+                        <p>Ucebne Formaty</p>
+                        <ul>
+                            <li>Kurzy</li>
+                            <li>Podcasty</li>
+                            <li>Shorty</li>
+                            <li>Pitch nights</li>
+                            <li>Cvicenia</li>
+                        </ul>
                     </div>
-                    <div><img src ="../assets/courseimg.jpg" class = "stock"></div>
                 </div>
-                <div class="">
-                    <p>Ucebne Formaty</p>
-                    <ul>
-                        <li>Kurzy</li>
-                        <li>Podcasty</li>
-                        <li>Shorty</li>
-                        <li>Pitch nights</li>
-                        <li>Cvicenia</li>
-                    </ul>
-                </div>
+                <img src ="../assets/courseimg.jpg" class = "stock">
             </div>
-        </div>
-        <div class = "compo">
-            <div class = "compo2">
-                <div class = "compo2_2">
+            <div class = "compo">
+                <img src ="../assets/eventimg.jpg" class = "stock">
+                <div class="events">
                     <div class="icon-bg">
                         <img src="../assets/calendar.svg" alt="" class = "icon">
                     </div>
-                    <div><img src ="../assets/eventimg.jpg" class = "stock"></div>
-                </div>
-                <div class="">
-                    <p>Komunitne podujatias</p>
-                    <ul>
-                        <li>Diskusie</li>
-                        <li>Livestreamy</li>
-                        <li>Eventy</li>
-                    </ul>
+                    <div class="">
+                        <p>Komunitne podujatias</p>
+                        <ul>
+                            <li>Diskusie</li>
+                            <li>Livestreamy</li>
+                            <li>Eventy</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,20 +60,14 @@ export default ({
     }
 })
 </script>
-<style>
-    .compo2{
-        margin-top: 400px;
-    }
+<style scoped>
 
-    .compo1_1{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .compo2_2{
-        display: flex;
-        flex-direction: row;
-    }
+.formats, .events {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
     .bgr{
         background-color: #2395E7;
@@ -88,12 +78,32 @@ export default ({
         flex-direction: row;
         justify-content:center;
         gap: 12em;
+        padding: 2em;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    button {
+        width:128px;
+        height: 64px;
+        align-self: center;
+        font-size: xx-large;
+        background-color: #2395E7;
+        border: 2px white solid;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
     }
 
     .stock{
         width: 300px;
         height: 200px;
-        margin-left: 12em;
+        border-radius: 12px;
     }
 
     .textNadpis{
@@ -111,8 +121,10 @@ export default ({
 
     .compo {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         gap: 1em;
+        margin: 1em 0 3em;
     }
     
 
@@ -135,6 +147,9 @@ export default ({
     p {
         font-size: larger;
         font-weight: bold;
+    }
+    img {
+        display: flex;
     }
 
 </style>
