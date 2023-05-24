@@ -79,12 +79,12 @@ export default ({
         padding-top: 100px;
     }
 
-    .bg{
+    /* .bg{
 	//background-image: url(../assets/background.svg) !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-    }
+    } */
  
     .logo{
         height: 56px;
