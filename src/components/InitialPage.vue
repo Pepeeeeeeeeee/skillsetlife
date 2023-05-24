@@ -80,7 +80,7 @@ export default ({
     }
 
     .bg{
-	background-image: url(../assets/background.svg) !important;
+	//background-image: url(../assets/background.svg) !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
