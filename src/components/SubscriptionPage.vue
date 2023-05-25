@@ -43,20 +43,34 @@
 
             <button @click = "pay()" class = "btn">Pokraovat</button>
         </div>
+
+        <Form id = "overlay" />
         
     </div>
 </template>
 <script>
+import Form from './FormPage.vue';
 export default ({
 	name: "SubscriptionPage",
 	components: {
+        Form,
 	},
 	data() {
-		return {}
+		return {
+            visible: false,
+        }
 	},
     methods: {
         pay(){
-            alert("Works")
+            if(this.visible == false){
+                document.getElementById("overlay").style.visibility = "visible";
+                this.visible = true;
+            }
+
+            else if(this.visible == true){
+                document.getElementById("overlay").style.visibility = "hidden";
+                this.visible = false;
+            }
         }
     }
 })
@@ -65,6 +79,11 @@ export default ({
     .title {
         text-align: center;
         margin-bottom: 3em;
+    }
+
+    #overlay{
+        visibility: hidden;
+        position: absolute;
     }
 
     .subscriptions-container{
