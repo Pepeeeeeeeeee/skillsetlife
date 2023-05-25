@@ -1,4 +1,8 @@
 <template>
+    <div class="title">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h3>Lorem, ipsum dolor.</h3>
+    </div>
     <div class = "subscriptions-container">
         <div class = "card monthly">
             <p class="header">/</p>
@@ -58,6 +62,11 @@ export default ({
 })
 </script>
 <style scoped>
+    .title {
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
     .subscriptions-container{
 	display: flex;
     gap: 5em;

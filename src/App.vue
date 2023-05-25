@@ -3,6 +3,7 @@
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Start />
   <Intro />
+  <PartnersPage/>
   <Testimonials />
   <Process />
   <FAQPage />
@@ -18,6 +19,7 @@ import Start from './components/InitialPage.vue';
 import Intro from './components/IntroPage.vue';
 import Footer from './components/FooterPage.vue';
 import FAQPage from './components/FAQPage.vue';
+import PartnersPage from './components/PartnersPage.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     Start,
     Intro,
     Footer,
-    FAQPage
+    FAQPage,
+    PartnersPage
   }
 }
 </script>
