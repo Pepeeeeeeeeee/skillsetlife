@@ -1,5 +1,5 @@
 <template>
-    <div class="faq-container">
+    <div class="faq-container" id="faq">
 
         <div class="questions">
             <div class="question left">
@@ -78,6 +78,34 @@ export default ({
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    margin-bottom: 4em;
+    }
+
+    h3 {
+    border-radius: 1px;
+    padding: .6em;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2395e7;
+    }
+
+    p {
+    font-size: 14px;
+    max-width: 615px;
+    margin: 0 auto;
+    width: 90%;
+    }
+
+    .questions {
+    margin-top: 3em;
+    display: block;
+    }
+
+    .question {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 16px;
     margin-bottom: 4em;
     }
 

@@ -17,12 +17,16 @@
         </nav>
         <title>skillset.life</title>
     </header>
-    <div class = "bg">
-
+    <div class = "hero-container">
+        
+        <div class="bg">
+            <img src="../assets/pexels-alena-darmel-9040431.jpg" class="bg-img">
+            <div class="bg-overlay"></div>
+        </div>
 
             <div class = "cont">
                 <h1>“Dosiahni svoje ciele s naším skvelým vzdelávacím nástrojom ”</h1>
-                <button @click ="move()">Zacnite hned</button>
+                <button class="btn2" @click ="move()">Zacnite hned</button>
             </div>
 
             <!-- <table>
@@ -52,6 +56,45 @@ export default ({
 </script>
 
 <style>
+      .btn2{
+        background-color: #2395e7;
+        border: none;
+        color: white;
+        padding: 16px 24px;
+        border-radius: 6px;
+        font-size: xx-large;
+        width: fit-content;
+        font-weight: bold;
+    }
+
+    .bg {
+        position: relative;
+    }
+
+    .bg > img {
+        width: 100%;
+    }
+
+    .bg-overlay {
+        position:absolute;
+        width: 100%;
+        height:100%;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(42, 93, 165, 0.388);
+    }
+
+    .cont {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 12em;
+        font-size: large;
+        color: white;
+        top: 25%;
+        left: 12em;
+    }
+
     .home-link {
         font-family: 'Times New Roman', Times, serif;
         font-size: x-large;
@@ -80,17 +123,6 @@ export default ({
     .divider {
         font-size: xx-large;
     }
-
-    .cont{
-        padding-top: 100px;
-    }
-
-    /* .bg{
-	//background-image: url(../assets/background.svg) !important;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-    } */
  
     .logo{
         height: 56px;
