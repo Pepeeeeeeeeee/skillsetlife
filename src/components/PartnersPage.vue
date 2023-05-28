@@ -1,20 +1,17 @@
 <template>
-   <h3>Partneri</h3>
-        <div id="logos"> 
-            <div id="logosPrev">
-                <img id="logo" src="../assets/bk.png" >
-                <img id="logo" src="../assets/MSVVAS.png" >
-                <img id="logo" src="../assets/spsehalova.png" >
-                <img id="logo" src="../assets/400square-legacy.jpg" >
-            </div>
-            <div id="logosNext">
-                <img id="logo" src="../assets/400square-legacy.jpg" >
-                <img id="logo" src="../assets/400square-legacy.jpg" >
-                <img id="logo" src="../assets/400square-legacy.jpg" >
-                <img id="logo" src="../assets/400square-legacy.jpg" >
-            </div>
+    <h1 class="title">Partneri</h1>
+    <div class="partners-container">
+        <div class="logos"> 
+            <img class="logo" src="../assets/bk.png" >
+            <img class="logo" src="../assets/MSVVAS.png" >
+            <img class="logo" src="../assets/spsehalova.png" >
+            <img class="logo" src="../assets/400square-legacy.jpg" >
+            <img class="logo" src="../assets/400square-legacy.jpg" >
+            <img class="logo" src="../assets/400square-legacy.jpg" >
+            <img class="logo" src="../assets/400square-legacy.jpg" >
+            <img class="logo" src="../assets/400square-legacy.jpg" >
         </div>
-    <h3>Benefits & Features</h3>
+    </div>
 </template>
 
 <script>
@@ -31,28 +28,16 @@ export default ({
 </script>
 
 <style scoped>
-    #logo
-{
+.logo {
     width: auto;
     max-height: 130px;
     margin: 3%;
-    /*border: dotted black 2px;*/ 
 }
 
-#logos
-{
-    border-bottom: solid black 2px;
-    width: 70%;
+.logos {
+    border-bottom: solclass black 2px;
+    width: 80%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-#logoToggle
-{
-    display:inline;
-    float:left;
+    margin: 0 auto;
 }
 </style>

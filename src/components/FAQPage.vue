@@ -1,5 +1,6 @@
 <template>
-    <div class="faq-container" id="faq">
+    <h1 class="title" id="faq">FAQ</h1>
+    <div class="faq-container">
 
         <div class="questions">
             <div class="question left">
@@ -64,7 +65,61 @@ export default ({
 </script>
 
 <style scoped>
-    .faq-container {
+    h3 {
+    padding: .6em;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2395e7;
+    color: white;
+    }
+
+    p {
+        max-width: 615px;
+        width: 90%;
+        font-size: 14px;
+        margin: 0 1.5em;
+    }
+
+@media screen and (min-width: 800px) {
+    p {
+        font-size: 16px;
+    }
+
+    .question {
+        margin-bottom: 3em;
+    }
+
+    .question.left {
+        margin-right: 25%;
+    }
+   .question.left h3 {
+        text-align: right;
+        padding-right: 2.5em;
+        border-radius: 0 8px 8px 0;
+    }
+    .question.left p {
+        margin-left: auto;
+    }
+    .question.right {
+        margin-left: 25%;
+    }
+    .question.right h3 {
+        text-align: left;
+        padding-left: 2.5em;
+        border-radius: 8px 0 0 8px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .question.left {
+        margin-right: 40%;
+    }
+    .question.right {
+        margin-left: 40%;
+    }
+}
+
+    /* .faq-container {
         width: 100%;
     }
 
@@ -142,6 +197,6 @@ export default ({
         text-align: left;
         padding-left: 2.5em;
         border-radius: 8px 0 0 8px;
-    }
+    } */
 
 </style>

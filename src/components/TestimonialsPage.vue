@@ -42,7 +42,7 @@ function showSlides(n) {
     <div class="slide fade">
       <div class="statement s-right">
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
         <div class="customer">
@@ -58,7 +58,7 @@ function showSlides(n) {
           <p class="customer-desc">Lorem, ipsum dolor.</p>
         </div>
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
       </div>
@@ -67,7 +67,7 @@ function showSlides(n) {
     <div class="slide fade">
       <div class="statement s-right">
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
         <div class="customer">
@@ -83,7 +83,7 @@ function showSlides(n) {
           <p class="customer-desc">Lorem, ipsum dolor.</p>
         </div>
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
       </div>
@@ -92,7 +92,7 @@ function showSlides(n) {
     <div class="slide fade">
       <div class="statement s-right">
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
         <div class="customer">
@@ -108,7 +108,7 @@ function showSlides(n) {
           <p class="customer-desc">Lorem, ipsum dolor.</p>
         </div>
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
       </div>
@@ -117,7 +117,7 @@ function showSlides(n) {
     <div class="slide fade">
       <div class="statement s-right">
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
         <div class="customer">
@@ -133,7 +133,7 @@ function showSlides(n) {
           <p class="customer-desc">Lorem, ipsum dolor.</p>
         </div>
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
       </div>
@@ -142,7 +142,7 @@ function showSlides(n) {
     <div class="slide fade">
       <div class="statement s-right">
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
         <div class="customer">
@@ -158,43 +158,40 @@ function showSlides(n) {
           <p class="customer-desc">Lorem, ipsum dolor.</p>
         </div>
         <div class="testemony">
-          <p class="statement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?</p>
+          <p class="statement-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque magnam dolor perferendis possimus unde accusantium, nam, aliquid blanditiis itaque necessitatibus vitae dolore veritatis? Rerum?"</p>
           <p class="rating">10/10</p>
         </div>
       </div>
     </div>
   
     <!-- Next and previous buttons -->
-    <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-    <a class="next" @click="plusSlides(1)">&#10095;</a>
   </div>
 </div>
 <br>
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-<span class="dot" @click="currentSlide(1)"></span>
-<span class="dot" @click="currentSlide(2)"></span>
-<span class="dot" @click="currentSlide(3)"></span>
-<span class="dot" @click="currentSlide(4)"></span>
-<span class="dot" @click="currentSlide(5)"></span>
-<span class="dot" @click="currentSlide(6)"></span>
-<span class="dot" @click="currentSlide(7)"></span>
-<span class="dot" @click="currentSlide(8)"></span>
-<span class="dot" @click="currentSlide(9)"></span>
-<span class="dot" @click="currentSlide(10)"></span>
+  <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+  <span class="dot" @click="currentSlide(1)"></span>
+  <span class="dot" @click="currentSlide(2)"></span>
+  <span class="dot" @click="currentSlide(3)"></span>
+  <span class="dot" @click="currentSlide(4)"></span>
+  <span class="dot" @click="currentSlide(5)"></span>
+  <span class="dot" @click="currentSlide(6)"></span>
+  <span class="dot" @click="currentSlide(7)"></span>
+  <span class="dot" @click="currentSlide(8)"></span>
+  <span class="dot" @click="currentSlide(9)"></span>
+  <span class="dot" @click="currentSlide(10)"></span>
+  <a class="next" @click="plusSlides(1)">&#10095;</a>
 </div>
 </template>
 
 <style scoped>
-* {box-sizing:border-box}
-
 .testimonials-container{
   background-color: #2395E7;
   padding: 2em;
   color: white;
 }
-
 
 .slides {
   max-width: 1000px;
@@ -202,12 +199,28 @@ function showSlides(n) {
   margin: auto;
 }
 
-/* Hide the images by default */
 .slide {
   display: none;
   margin: auto;
 }
 
+.rating {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.customer-desc {
+  text-align: center;
+}
+
+.customer-photo {
+  width: 265px;
+  display: table;
+  margin: 0 auto;
+  border-radius: 25%;
+}
+
+/*
 .statement {
   display: flex;
   gap: 5em;
@@ -243,38 +256,24 @@ function showSlides(n) {
 .customer-photo {
   width: 265px;
   border-radius: 25%;
-} 
+}  */
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  bottom: -15%;
   width: auto;
   padding: 16px;
-  color: #ffffff;
+  margin: 0 12px;
+  color: #000000;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 3px;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
-.prev {
-  left: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -299,5 +298,26 @@ function showSlides(n) {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (min-width: 600px) {
+  .statement {
+  display: flex;
+  gap:2em;
+  margin: 25px 0;
+  text-align: center;
+  }
+
+  .testemony {
+  margin:auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .statement-text {
+  font-weight: bolder;
+  font-size: large;
+  line-height: 2em;
+  }
 }
 </style>

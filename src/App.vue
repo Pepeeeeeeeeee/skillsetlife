@@ -1,38 +1,34 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Start />
   <PartnersPage/>
-  <Intro />
+  <Features />
   <Testimonials />
-  <Process />
+  <SubscriptionPage />
   <FAQPage />
   <Footer />
 
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import Testimonials from './components/TestimonialsPage.vue';
-import Process from './components/ProcessPage.vue';
 import Start from './components/InitialPage.vue';
-import Intro from './components/IntroPage.vue';
+import Testimonials from './components/TestimonialsPage.vue';
+import Features from './components/FeaturesPage.vue';
 import Footer from './components/FooterPage.vue';
 import FAQPage from './components/FAQPage.vue';
 import PartnersPage from './components/PartnersPage.vue'
+import SubscriptionPage from './components/SubscriptionPage.vue';
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld
-    Testimonials,
-    Process,
     Start,
-    Intro,
+    Testimonials,
+    Features,
     Footer,
     FAQPage,
-    PartnersPage
-  }
+    PartnersPage,
+    SubscriptionPage,
+  },
 }
 </script>
 
@@ -41,5 +37,21 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.logo{
+  height: 56px;
+}
+
+.title {
+  font-size: x-large;
+  color: black;
+  text-align: center;
+  padding-top: 3em;
 }
 </style>
