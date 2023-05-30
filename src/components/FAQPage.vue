@@ -62,7 +62,13 @@ export default ({
 	},
     methods: {
         show(i){
-            document.getElementById("ans" + [i]).style.visibility = "visible";
+            var x = document.getElementById("ans" + i);
+            if(x.style.visibility === "visible"){
+                x.style.visibility = "hidden";
+            }
+            else{
+                x.style.visibility = "visible";
+            }
         }
     }
 })
