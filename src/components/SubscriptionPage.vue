@@ -1,9 +1,10 @@
 <template>
-        <h1 class="title" id="plans">Lorem ipsum dolor sit.</h1>
-        <h3 class="subtitle">Lorem, ipsum dolor.</h3>
+    <h1 class="title" id="plans">Predplatné Plány</h1>
+    <h3 class="subtitle">Lorem, ipsum dolor.</h3>
     <div class = "subscriptions-container">
         <div class = "card monthly">
             <p class="header">/</p>
+            <h4 class="sub-header">Pre Jednotlivcov</h4>
             <h4>Mesacny</h4>
             <h2>12.99$</h2>
             <h5>mesacne</h5>
@@ -11,11 +12,11 @@
                 <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
                 <h3>Ziskajte okamzity pristup k obsahu</h3>
             </div>
-            <h6>* iba pre jednotlivcov</h6>
             <button @click = "pay()" class = "btn">Pokraovat</button>
         </div>
         <div class = "card yearly">
             <p class="header">Usetrite XX%</p>
+            <h4 class="sub-header">Pre Jednotlivcov</h4>
             <h4>Rocny</h4>
             <h2>129$</h2>
             <h5>rocne</h5>
@@ -23,12 +24,12 @@
                 <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
                 <h3>Ziskajte okamzity pristup k obsahu</h3>
             </div>
-            <h6>* iba pre jednotlivcov</h6>
             <button @click = "pay()" class = "btn">Pokraovat</button>
         </div>
+        <div class="divider"></div>
         <div class = "card orgs">
             <p class="header">Pre Firmy a Skoly</p>
-            <div class="org-process">
+            <div class="cont-org">
                 <div class="step">
                     <div class="step-img"><img src="../assets/notes.svg" alt=""></div>
                     <h3>Napiste nam</h3>
@@ -37,13 +38,12 @@
                     <div class="step-img"><img src="../assets/pen.svg" alt=""></div>
                     <h3>Dohodneme sa na podmienkach</h3>
                 </div>
-            </div>
 
-            <button @click = "pay()" class = "btn">Pokraovat</button>
+                <button @click = "pay()" class = "btn">Pokraovat</button>
+            </div>
         </div>
 
         <Form id = "overlay" />
-        
     </div>
 </template>
 <script>
@@ -74,11 +74,13 @@ export default ({
 })
 </script>
 <style scoped>
-#overlay{
-    visibility: hidden;
-    position: absolute;
-}
-
+    #overlay{
+        visibility: hidden;
+        position: absolute;
+    }
+    .divider {
+        display: none;
+    }
     .subtitle {
         text-align: center;
     }
@@ -86,10 +88,17 @@ export default ({
     .card{
         margin: 1em auto;
         width: 188px;
-        height: 232px;
+        height: 248px;
         border: 2px solid black;
         text-align: center;
         border-radius: 16px;
+    }
+
+    .cont-org {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     h2, h3, h5 {
@@ -147,6 +156,10 @@ export default ({
         margin: 12px 0 24px;
         color: black;
     }
+    .sub-header {
+        font-weight: normal;
+        margin: .5em 0;
+    }
 
 @media screen and (min-width: 800px) {
     .subscriptions-container {
@@ -154,6 +167,14 @@ export default ({
         justify-content: space-evenly;
         max-width: 1000px;
         margin: 0 auto;
+    }
+
+    .divider {
+        display: block;
+        width: 2px;
+        height: 200px;
+        background-color: #2395E7;
+        margin: auto -2px;
     }
 }
 

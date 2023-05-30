@@ -220,44 +220,6 @@ function showSlides(n) {
   border-radius: 25%;
 }
 
-/*
-.statement {
-  display: flex;
-  gap: 5em;
-  margin: 25px 0;
-}
-
-.statement-text {
-  font-weight: bolder;
-  font-size: x-large;
-  line-height: 2em;
-}
-
-.statement.s-right {
-  text-align: right;
-}
-
-.statement.s-left {
-  text-align: left;
-}
-
-.testemony {
-  margin:auto;
-}
-
-.rating {
-  font-size: xx-large;
-}
-
-.customer-desc {
-  text-align: center;
-}
-
-.customer-photo {
-  width: 265px;
-  border-radius: 25%;
-}  */
-
 .prev, .next {
   cursor: pointer;
   width: auto;
@@ -289,7 +251,6 @@ function showSlides(n) {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
