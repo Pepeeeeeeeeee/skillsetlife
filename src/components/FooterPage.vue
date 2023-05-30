@@ -1,29 +1,31 @@
 <template>
-    <footer id="footer">
-        <div class = "footer">
-            <div class="comp left">
-                <img src = "../assets/logo/Colorlogo-nobackground.svg" class = "logo">
-                <p class="divider">|</p>
-                <div class = "contact">
-                    <img src="../assets/contact-svgrepo-com.svg" class="icon">
-                    <div>
-                        <p>email@email.com <br> +421 948 569 954</p>
+    <div class="footer-container">
+        <footer id="footer">
+            <div class = "footer">
+                <div class="comp left">
+                    <img src = "../assets/logo/Colorlogo-nobackground.svg" class = "logo">
+                    <p class="divider">|</p>
+                    <div class = "contact">
+                        <img src="../assets/contact-svgrepo-com.svg" class="icon">
+                        <div>
+                            <p>email@email.com <br> +421 948 569 954</p>
+                        </div>
                     </div>
                 </div>
+                <div class="comp middle">
+                    <a>copyright</a>
+                    <a>copyright1</a>
+                    <a>copyright2</a>
+                </div>
+                <div class="comp right">
+                    <img src="../assets/linkedin-svgrepo-com.svg" class = "icon">
+                    <img src="../assets/tiktok-svgrepo-com.svg" class = "icon">
+                    <img src="../assets/instagram.svg" class = "icon">
+                    <img src="../assets/facebook.svg" class = "icon">
+                </div>
             </div>
-            <div class="comp middle">
-                <a>copyright</a>
-                <a>copyright1</a>
-                <a>copyright2</a>
-            </div>
-            <div class="comp right">
-                <img src="../assets/linkedin-svgrepo-com.svg" class = "icon">
-                <img src="../assets/tiktok-svgrepo-com.svg" class = "icon">
-                <img src="../assets/instagram.svg" class = "icon">
-                <img src="../assets/facebook.svg" class = "icon">
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </template>
 
 <script>
@@ -40,17 +42,21 @@ export default ({
 </script>
 
 <style scoped>
+    .footer-container{
+        background-color: #ABD2FF;
+    }
     .icon {
         width: 50px;
         height: 50px;
     }
     .footer {
-        background-color: #ABD2FF;
         display: grid;
         row-gap: 1em;
         padding: 1em;
         padding-bottom: 4px;
+        margin: auto;
         margin-top: 2em;
+        max-width: 1920px;
     }
 
     .divider {
@@ -132,7 +138,7 @@ export default ({
 
     .comp.middle{
         transform: initial;
-        place-self: end center;
+        place-self: center;
         grid-column: 2;
     }
 

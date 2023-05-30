@@ -1,47 +1,47 @@
 <template>
-    <h1 class="title" id="faq">FAQ</h1>
+    <h1 class="title" id="faq">Často kladené otázky</h1>
     <div class="faq-container">
 
         <div class="questions">
-            <div class="question left" @click="show(1)">
-                <h3 id = "que1">Lorem ipsum dolor sit amet</h3>
-                <p id = "ans1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="question left" @click="toggleShow(1)">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
 
-            <div class="question right" @click="show(2)">
-                <h3 id = "que2">Lorem ipsum dolor sit amet</h3>
-                <p id = "ans2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="question right" @click="toggleShow(2)">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
 
-            <div class="question left" @click="show(3)">
-                <h3 id = "que3">Lorem ipsum dolor sit amet</h3>
-                <p id = "ans3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="question left" @click="toggleShow(3)">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
 
-            <div class="question right" @click="show(4)">
-                <h3 id = "que4">Lorem ipsum dolor sit amet</h3>
-                <p id = "ans4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="question right" @click="toggleShow(4)">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
 
-            <div class="question left" @click="show(5)">
-                <h3 id = "que5">Lorem ipsum dolor sit amet</h3>
-                <p id = "ans5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="question left" @click="toggleShow(5)">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -61,35 +61,38 @@ export default ({
         }
 	},
     methods: {
-        show(i){
-            var x = document.getElementById("ans" + i);
-            if(x.style.visibility === "visible"){
-                x.style.visibility = "hidden";
-            }
-            else{
-                x.style.visibility = "visible";
-            }
+        toggleShow(i){
+            var x = document.getElementsByClassName('question')[i-1];
+            x.classList.toggle('active');
         }
     }
 })
 </script>
 
 <style scoped>
-    #ans1{
-        visibility: hidden;
+    .active p {
+        display: block;
     }
-    #ans2{
-        visibility: hidden;
+
+    .left h3:after{
+        margin-left: 1em;
+        content: '⮟';
     }
-    #ans3{
-        visibility: hidden;
+
+    .active.left h3:after {
+        margin-left: 1em;
+        content: '⮝';
     }
-    #ans4{
-        visibility: hidden;
+    .right h3:before{
+        margin-right: 1em;
+        content: '⮟';
     }
-    #ans5{
-        visibility: hidden;
+
+    .active.right h3:before {
+        margin-right: 1em;
+        content: '⮝';
     }
+
     h3 {
     padding: .6em;
     text-align: center;
@@ -103,6 +106,7 @@ export default ({
         width: 90%;
         font-size: 14px;
         margin: 0 1.5em;
+        display: none;
     }
 
 @media screen and (min-width: 800px) {

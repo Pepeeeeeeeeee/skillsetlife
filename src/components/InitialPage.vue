@@ -1,23 +1,25 @@
 <template>
-    <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <a href="#"><img src="../assets/logo/Colorlogo-nobackground.svg" alt="" class="logo"></a>
-                <div class = "comp divider">|</div>
-                <div class = "comp"><a class="home-link" href="#">Your learning portal</a></div>
-            </div>
-            <div class="nav-right">
-                <div class = "comp nm"><a href="#plans">PLÁNY</a></div>
-                <div class = "comp nm"><a href="#faq">FAQ</a></div>
-                <div class = "comp nm"><a href="#footer">KONTAKT</a></div>
-                <div class = "comp divider">|</div>
-                <div class = "comp social"><img src="../assets/instagram.svg"></div>
-                <div class = "comp social"><img src="../assets/facebook.svg"></div>
-            </div>
-            <div class="nav-mobile" @click="toggleMobileNav()"><a id="navbar-toggle" href="#!"></a><span></span></div>
-        </nav>
-        <title>skillset.life</title>
-    </header>
+    <div class="nav-container">
+        <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="#"><img src="../assets/logo/Colorlogo-nobackground.svg" alt="" class="logo"></a>
+                    <div class = "comp divider">|</div>
+                    <div class = "comp contact">
+                        <img src="../assets/contact-svgrepo-com.svg" class="icon">
+                        <div>
+                            <p>email@email.com <br> +421 948 569 954</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class = "comp nm"><a href="#plans">PLÁNY</a></div>
+                    <div class = "comp nm"><a href="#faq">FAQ</a></div>
+                </div>
+                <div class="nav-mobile" @click="toggleMobileNav()"><a id="navbar-toggle" href="#!"></a><span></span></div>
+            </nav>
+        </header>        
+    </div>
 
     <div class = "hero-container">
         
@@ -69,19 +71,30 @@ export default ({
 </script>
 
 <style scoped>
-    /* NAV */
-    .navbar{
+.logo {
+    margin-left: 2em;
+}
+    .contact{
+        gap: 1em;
+        color: white;
+    }
+    .nav-container {
         background-color: #2395e2;
-        display: flex;
         height: 56px;
-        justify-content: space-between;
         z-index: 1;
         position: fixed;
         top: 0%;
         width: 100%;
     }
+    .navbar{
+        display: flex;
+        height: 56px;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 1920px;
+    }
     .comp {
-        padding: 0 16px;
+        padding: 0 12px;
         display: flex;
         align-items: center;
     }
@@ -126,9 +139,6 @@ export default ({
         font-size: 1.4em;
     }
 
-    .nav-right .divider, .nav-right .social {
-        display: none;
-    }
 
     .nav-mobile {
         display: flex;
@@ -243,15 +253,6 @@ export default ({
         display: none;
     }
 
-    .nav-right .divider, .nav-right .social {
-        display: flex;
-        padding: .25em;
-    }
-
-    .nav-right .divider {
-        font-size: xx-large;
-        color: white;
-    }
     
     .cont {
         place-self: center start;
@@ -266,75 +267,7 @@ export default ({
     }
 
     .cta-btn {
-        margin: 10em auto 0 5%;
+        margin: 2em auto 0 5%;
     }
 }
-
-    /* .btn2{
-        background-color: #2395e7;
-        border: none;
-        color: white;
-        padding: 16px 24px;
-        border-radius: 6px;
-        font-size: xx-large;
-        width: fit-content;
-        font-weight: bold;
-    }
-
-    .bg {
-        position: relative;
-    }
-
-    .bg > img {
-        width: 100%;
-    }
-
-    .bg-overlay {
-        position:absolute;
-        width: 100%;
-        height:100%;
-        top: 0%;
-        left: 0%;
-        background-color: rgba(42, 93, 165, 0.388);
-    }
-
-    .cont {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 12em;
-        font-size: large;
-        color: white;
-        top: 25%;
-        left: 12em;
-    }
-
-
-    .navbar{
-        display: flex;
-        height: 56px;
-        justify-content: space-between;
-        z-index: 1;
-        position: fixed;
-        top: 0%;
-        width: 100%;
-    }
-
-    .nav-left, .nav-right {
-        display: flex;
-    }
-    
-    .comp {
-        padding: 0 16px;
-        display: flex;
-        align-items: center;
-    }
-
-    .divider {
-        font-size: xx-large;
-    }
- 
-    .logo{
-        height: 56px;
-    } */
 </style>

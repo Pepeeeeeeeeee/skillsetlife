@@ -164,25 +164,21 @@ function showSlides(n) {
       </div>
     </div>
   
-    <!-- Next and previous buttons -->
   </div>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-  <span class="dot" @click="currentSlide(1)"></span>
-  <span class="dot" @click="currentSlide(2)"></span>
-  <span class="dot" @click="currentSlide(3)"></span>
-  <span class="dot" @click="currentSlide(4)"></span>
-  <span class="dot" @click="currentSlide(5)"></span>
-  <span class="dot" @click="currentSlide(6)"></span>
-  <span class="dot" @click="currentSlide(7)"></span>
-  <span class="dot" @click="currentSlide(8)"></span>
-  <span class="dot" @click="currentSlide(9)"></span>
-  <span class="dot" @click="currentSlide(10)"></span>
-  <a class="next" @click="plusSlides(1)">&#10095;</a>
+  <div style="text-align:center">
+    <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+    <span class="dot" @click="currentSlide(1)"></span>
+    <span class="dot" @click="currentSlide(2)"></span>
+    <span class="dot" @click="currentSlide(3)"></span>
+    <span class="dot" @click="currentSlide(4)"></span>
+    <span class="dot" @click="currentSlide(5)"></span>
+    <span class="dot" @click="currentSlide(6)"></span>
+    <span class="dot" @click="currentSlide(7)"></span>
+    <span class="dot" @click="currentSlide(8)"></span>
+    <span class="dot" @click="currentSlide(9)"></span>
+    <span class="dot" @click="currentSlide(10)"></span>
+    <a class="next" @click="plusSlides(1)">&#10095;</a>
+  </div>
 </div>
 </template>
 
@@ -225,7 +221,7 @@ function showSlides(n) {
   width: auto;
   padding: 16px;
   margin: 0 12px;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -241,14 +237,14 @@ function showSlides(n) {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #e4e3e3;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #949393;
 }
 
 .fade {
