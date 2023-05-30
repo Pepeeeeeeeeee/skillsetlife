@@ -45,7 +45,7 @@
                     </select>
             </div>
 
-            <!-- <input type = "submit" value = "Odoslat" id = "reg"> -->
+            <input type = "submit" value = "Odoslat" id = "reg">
         </form>
     </div>
 </template>

@@ -12,7 +12,7 @@
                 <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
                 <h3>Ziskajte okamzity pristup k obsahu</h3>
             </div>
-            <button @click = "pay()" class = "btn">Pokraovat</button>
+            <button class = "btn">Pokraovat</button>
         </div>
         <div class = "card yearly">
             <p class="header">Usetrite XX%</p>
@@ -24,7 +24,7 @@
                 <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
                 <h3>Ziskajte okamzity pristup k obsahu</h3>
             </div>
-            <button @click = "pay()" class = "btn">Pokraovat</button>
+            <button class = "btn">Pokraovat</button>
         </div>
         <div class="divider"></div>
         <div class = "card orgs">
