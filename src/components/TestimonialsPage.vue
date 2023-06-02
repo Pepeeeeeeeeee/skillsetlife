@@ -1,10 +1,40 @@
+<!-- eslint-disable no-unused-vars -->
 <script setup>
 import { onMounted } from 'vue';
+let cont;
+let isDown;
+let startX
+let scrollDir;
+
 let slides;
 let dots;
 let slideIndex = 1;
 
 onMounted(() => {
+  cont = document.querySelector('.testimonials-container')
+  cont.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX;
+  })
+  cont.addEventListener('mouseleave', () => {
+    isDown = false;
+  })
+  cont.addEventListener('mouseup', () => {
+    isDown = false;
+  })
+  cont.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    if(e.pageX >= startX + 200) {
+      plusSlides(1);
+      startX = e.pageX;
+    }
+    if(e.pageX <= startX - 200) {
+      plusSlides(-1);
+      startX = e.pageX;
+    }
+  })
+
+
   slides = document.getElementsByClassName("slide");
   dots = document.getElementsByClassName("dot");
   showSlides(slideIndex);

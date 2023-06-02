@@ -5,44 +5,43 @@
         <div class = "card monthly">
             <p class="header">/</p>
             <h4 class="sub-header">Pre Jednotlivcov</h4>
-            <h4>Mesacny</h4>
+            <h4>Mesačný</h4>
             <h2>12.99$</h2>
-            <h5>mesacne</h5>
+            <h5>mesačne</h5>
             <div class="step">
                 <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
-                <h3>Ziskajte okamzity pristup k obsahu</h3>
+                <h3>Získajte okamžitý prístup k obsahu</h3>
             </div>
-            <button class = "btn">Pokraovat</button>
+            <button class = "btn">Pokračovať</button>
         </div>
         <div class = "card yearly">
-            <p class="header">Usetrite XX%</p>
+            <p class="header">Ušetrite XX%</p>
             <h4 class="sub-header">Pre Jednotlivcov</h4>
-            <h4>Rocny</h4>
+            <h4>Ročný</h4>
             <h2>129$</h2>
-            <h5>rocne</h5>
+            <h5>ročne</h5>
             <div class="step">
                 <div class="step-img"><img src="../assets/credit-card.svg" alt=""></div>
-                <h3>Ziskajte okamzity pristup k obsahu</h3>
+                <h3>Získajte okamžitý prístup k obsahu</h3>
             </div>
-            <button class = "btn">Pokraovat</button>
+            <button class = "btn">Pokračovať</button>
         </div>
         <div class="divider"></div>
         <div class = "card orgs">
-            <p class="header">Pre Firmy a Skoly</p>
+            <p class="header">Pre Firmy a Školy</p>
             <div class="cont-org">
                 <div class="step">
                     <div class="step-img"><img src="../assets/notes.svg" alt=""></div>
-                    <h3>Napiste nam</h3>
+                    <h3>Napíšte nám</h3>
                 </div>
                 <div class="step">
                     <div class="step-img"><img src="../assets/pen.svg" alt=""></div>
                     <h3>Dohodneme sa na podmienkach</h3>
                 </div>
 
-                <button @click = "pay()" class = "btn">Pokraovat</button>
+                <button @click = "pay()" class = "btn">Pokračovať</button>
             </div>
         </div>
-
         <Form id = "overlay" />
     </div>
 </template>

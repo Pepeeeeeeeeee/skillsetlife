@@ -52,8 +52,7 @@ export default ({
     .footer {
         display: grid;
         row-gap: 1em;
-        padding: 1em;
-        padding-bottom: 4px;
+        padding: 4px;
         margin: auto;
         margin-top: 2em;
         max-width: 1920px;
